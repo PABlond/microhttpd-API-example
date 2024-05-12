@@ -4,12 +4,12 @@
 int main() 
 {
 	if (initialize_server() != 0) {
-        	fprintf(stderr, "Server not initialized\n");
+        	printf("Server not initialized\n");
         	return 1;
     	}
 
     	if (start_server() != 0) {
-        	fprintf(stderr, "Server not started\n");
+        	printf("Server not started\n");
         	return 1;
     	}
 

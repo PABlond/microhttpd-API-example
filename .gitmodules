@@ -1,0 +1,6 @@
+[submodule "libs/cJSON"]
+	path = libs/cJSON
+	url = https://github.com/DaveGamble/cJSON.git
+[submodule "libs/libmicrohttpd"]
+	path = libs/libmicrohttpd
+	url = https://github.com/scottjg/libmicrohttpd.git

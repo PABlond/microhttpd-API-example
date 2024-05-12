@@ -21,7 +21,7 @@ int start_server()
 {
 	if (!server_daemon)
         	return 1;
-    
+	// TODO 
     	return 0;
 }
 
@@ -31,6 +31,6 @@ void stop_server()
         	MHD_stop_daemon(server_daemon);
         	server_daemon = NULL;
     	} else 
-        	fprintf(stderr, "Le serveur n'est pas démarré.\n");
+        	printf("Le serveur n'est pas démarré.\n");
     	
 }
