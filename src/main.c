@@ -1,22 +1,22 @@
 #include <stdio.h>
+
 #include "server.h"
 
-int main() 
-{
+int main() {
 	if (initialize_server() != 0) {
-        	printf("Server not initialized\n");
-        	return 1;
-    	}
+		printf("Server not initialized\n");
+		return 1;
+	}
 
-    	if (start_server() != 0) {
-        	printf("Server not started\n");
-        	return 1;
-    	}
+	if (start_server() != 0) {
+		printf("Server not started\n");
+		return 1;
+	}
 
-    	printf("Enter to stop server...\n");
-    	getchar();
+	printf("Enter to stop server...\n");
+	getchar();
 
-    	stop_server();
+	stop_server();
 
-    	return 0;
+	return 0;
 }
