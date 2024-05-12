@@ -2,6 +2,8 @@
 #define HANDLER_H
 
 #include <microhttpd.h>
+#include "routes/not_found.h"
+#include "routes/ping.h"
 
 int handle_request(void *cls, struct MHD_Connection *connection,
                    const char *url, const char *method,
